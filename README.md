@@ -53,7 +53,7 @@ In the admin panel, open **Publications**. Add an entry at the top (newest first
 
 ## Still to fill in
 
-Search the files for `TODO`: contact email, Google Scholar profile link, the full name of the artist of the hero drawing, full names of the Song of the Bees collaborators, a link for the 2013 SAE paper, and the About bio in your own words.
+Search the files for `TODO`: contact email, Google Scholar profile link, full names of the Song of the Bees collaborators, a link for the 2013 SAE paper, and the About bio in your own words.
 
 ## Publishing on GitHub Pages (one-time setup)
 
