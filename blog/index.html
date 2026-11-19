@@ -1,0 +1,26 @@
+---
+layout: default
+title: Research log
+summary: Notes, experiments and progress from ongoing practice research in spatial audio and sonic movement.
+---
+<div class="hero">
+  <div class="wrap" style="display:block">
+    <h1>Research log</h1>
+    <p class="lede">Notes, experiments and progress from ongoing practice research in spatial audio and sonic movement.</p>
+    {% assign tags = site.tags | sort %}
+    {% if tags.size > 0 %}<ul class="tags">{% for t in tags %}<li><a href="#{{ t[0] | slugify }}">{{ t[0] }} ({{ t[1].size }})</a></li>{% endfor %}</ul>{% endif %}
+  </div>
+</div>
+<section>
+  <div class="wrap">
+    {% include post-list.html posts=site.posts %}
+  </div>
+</section>
+{% for t in tags %}
+<section id="{{ t[0] | slugify }}">
+  <div class="wrap">
+    <div class="section-head"><h2>{{ t[0] }}</h2></div>
+    {% assign tagged = t[1] %}{% include post-list.html posts=tagged %}
+  </div>
+</section>
+{% endfor %}

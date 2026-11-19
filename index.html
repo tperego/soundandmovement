@@ -1,0 +1,163 @@
+---
+layout: default
+title: Sound and Movement
+head: |
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Tommaso Perego","jobTitle":"Senior Lecturer, Sound and Music","affiliation":{"@type":"Organization","name":"University of East London"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Goldsmiths, University of London"},{"@type":"CollegeOrUniversity","name":"Conservatorio di Musica Giuseppe Verdi, Milano"}],"url":"https://www.soundandmovement.info/","sameAs":["https://orcid.org/0009-0001-6295-1552"],"knowsAbout":["Spatial audio","Wave field synthesis","Ambisonics","Sonic movement","Multimodal perception","Sound and dance"]}
+  </script>
+---
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="role">Tommaso Perego · Senior Lecturer in Sound and Music, University of East London</p>
+      <h1>How sound moves, and how we feel it move.</h1>
+      <p class="lede">I compose and research <strong>sonic movement</strong>: the sense of motion we perceive through spatial audio. My work joins wave field synthesis and ambisonics with dance, theatre, visuals and interactive media, and asks how sight, body and sound shape what we hear.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#publications">Latest publication</a>
+        <a class="btn" href="{{ '/blog/' | relative_url }}">Read the research log</a>
+      </div>
+    </div>
+    <figure style="margin:0">
+      <img src="{{ '/img/' | relative_url }}sound-and-movement.jpg" width="1000" height="1000"
+           alt="Line drawing of dancers moving along a winding path, surrounded by concentric sound waves radiating from loudspeakers"
+           fetchpriority="high" style="mix-blend-mode:multiply;border:0;background:none">
+      <!-- TODO: confirm the artist's full name -->
+      <figcaption>Drawing: Maria …, 2014</figcaption>
+    </figure>
+  </div>
+</div>
+
+
+<!-- RESEARCH LOG -->
+<section id="log">
+  <div class="wrap">
+    <div class="section-head"><h2>Latest from the research log</h2><a href="{{ '/blog/' | relative_url }}">All posts →</a></div>
+    {% assign latest = site.posts | slice: 0, 3 %}
+    {% include post-list.html posts=latest %}
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="wrap">
+    <div class="section-head"><h2>Current research</h2></div>
+
+    <div class="featured">
+      <span class="kicker">New · Organised Sound, 2026</span>
+      <h3>Sonic Movement: the perception of movement through sound as a case of multimodality integration in Spatial Audio Composition</h3>
+      <p class="prose">The article sets movement created by sound beside movement created by dancers' bodies, and works through three case studies that mix sound, visuals, staging and performance. It argues that the feeling of sonic movement depends on intermediality and multimodal perception, especially in spatial audio compositions built around movement gestures, and draws out what this means for staging the listener's experience and participation.</p>
+      <p><a href="https://doi.org/10.1017/S1355771826101459">Read in Organised Sound (Cambridge University Press) →</a></p>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <h3>Sonic movement</h3>
+        <p>How spatial attributes of sound, arranged over time, create a perceivable choreography of motion around the listener.</p>
+      </article>
+      <article class="card">
+        <h3>Multimodal listening</h3>
+        <p>How visual cues, bodily movement and proprioception change what listeners hear in immersive sound systems.</p>
+      </article>
+      <article class="card">
+        <h3>Interactive spatial audio</h3>
+        <p>What happens to a sonic choreography when the listener becomes a player who moves, decides and explores, as in <a href="{{ '/bees/' | relative_url }}">Song of the Bees</a>.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works">
+  <div class="wrap">
+    <div class="section-head"><h2>Works and projects</h2></div>
+    <div class="grid">
+
+      <article class="card">
+        <span class="year">2024 – ongoing</span>
+        <h3>Song of the Bees</h3>
+        <ul class="tags"><li>interactive</li><li>game engine</li><li>choreography</li></ul>
+        <p>An immersive, interactive game in which the player is a bee. Choreographed pollen trajectories, designed with dancers and translated from Maya into Unity, carry sound and visuals through space.</p>
+        <div class="links"><a href="{{ '/bees/' | relative_url }}">Project page and journal</a></div>
+      </article>
+
+      <article class="card">
+        <span class="year">2016</span>
+        <h3>I Hear You See Me</h3>
+        <ul class="tags"><li>installation</li><li>participatory theatre</li><li>ambisonics</li></ul>
+        <p>An audiovisual installation combining participatory theatre, sonic movement and motion graphics, with theatre artist Silvia Mercuriali and visual artist Simon Wilkinson. Listeners' guided movements change their perspective on moving sound.</p>
+        <div class="links"><a href="https://tom.sounddesignrecipes.com/2016/09/30/i-hear-you-see-me/">About the work</a></div>
+      </article>
+
+      <article class="card">
+        <span class="year">2014</span>
+        <h3>First International Symposium on Sound and Movement Practices</h3>
+        <ul class="tags"><li>symposium</li><li>Goldsmiths</li></ul>
+        <p>An international symposium at Goldsmiths, University of London, bringing together practitioners and researchers working between sound and movement. Stranded was presented there.</p>
+        <div class="links"><a href="https://www.gold.ac.uk/calendar/?id=8125">Event page</a></div>
+      </article>
+
+      <article class="card">
+        <span class="year">2013 – 2014</span>
+        <h3>Stranded</h3>
+        <ul class="tags"><li>dance</li><li>wave field synthesis</li><li>192 loudspeakers</li></ul>
+        <p>A joint choreography for three dancers and sonic movement with choreographer Jalianne Li, performed on The Game of Life Foundation's 192-loudspeaker wave field synthesis system. Premiered in Den Haag (NL).</p>
+        <div class="links"><a href="https://tom.sounddesignrecipes.com/2014/01/11/stranded/">About the work</a></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Publications</h2>
+      <!-- TODO: replace with your Google Scholar profile URL (citations?user=XXXX) -->
+      <span class="muted"><a href="https://orcid.org/0009-0001-6295-1552">ORCID</a> · <a href="https://scholar.google.com/scholar?q=%22Tommaso+Perego%22+sound">Google Scholar</a></span>
+    </div>
+    <ol class="pubs" reversed>
+      {%- for p in site.data.publications %}
+      <li>
+        <span class="y">{{ p.year }}</span>
+        <div>
+          <div class="t">{{ p.title }}{% if p.new %} <span class="badge">New</span>{% endif %}</div>
+          <div class="v">{{ p.venue }}</div>
+          {% if p.links.size > 0 %}<div class="l">{% for l in p.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</div>{% endif %}
+        </div>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about">
+    <div class="prose">
+      <h2>About</h2>
+      <!-- TODO: edit this bio in your own words -->
+      <p>Tommaso Perego is a composer, sound designer and researcher. He is Senior Lecturer in Sound and Music at the University of East London.</p>
+      <p>His PhD at Goldsmiths, University of London (Unit of Sound Practice Research), <em>Sonic Choreosophia</em>, explored spatial audio in multimodal contexts, applying wave field synthesis and ambisonics to dance choreography and theatre in collaboration with choreographers, theatre makers and visual artists.</p>
+      <p>Before that he trained at the Conservatorio di Musica Giuseppe Verdi in Milan, with diplomas in composition, double bass, music technology and orchestral conducting.</p>
+    </div>
+    <ul class="facts">
+      <li><b>Now</b>Senior Lecturer, Sound and Music · University of East London</li>
+      <li><b>PhD, Sonic Arts</b>Goldsmiths, University of London · 2017</li>
+      <li><b>PGCert, Teaching and Learning in HE</b>Goldsmiths, University of London · 2012</li>
+      <li><b>Diplomas</b>Composition, Double Bass (1996) · Music Technology (2001) · Orchestral Conducting (2004) · Conservatorio G. Verdi, Milano</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap prose">
+    <h2>Contact</h2>
+    <p>For collaborations, performances, research or teaching enquiries:</p>
+    <!-- TODO: add the email address you want public -->
+    <p><a class="btn primary" href="mailto:YOUR-EMAIL@example.com">Email me</a></p>
+    <p class="muted"><a href="https://orcid.org/0009-0001-6295-1552">ORCID 0009-0001-6295-1552</a></p>
+  </div>
+</section>

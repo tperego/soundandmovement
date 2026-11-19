@@ -1,0 +1,21 @@
+title: Sound and Movement
+author: Tommaso Perego
+description: Practice research in spatial audio, sonic movement and multimodal perception by Tommaso Perego.
+url: "https://www.soundandmovement.info"
+baseurl: ""
+timezone: Europe/London
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /blog/:year/:month/:title/
+plugins:
+  - jekyll-feed
+exclude:
+  - README.md
+  - .pages.yml
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

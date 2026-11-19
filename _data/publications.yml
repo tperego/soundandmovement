@@ -1,0 +1,32 @@
+# Newest first. Edit in the admin panel (Pages CMS) or here.
+- year: 2026
+  title: "Sonic Movement: the perception of movement through sound as a case of multimodality integration in Spatial Audio Composition"
+  venue: Organised Sound, Cambridge University Press
+  new: true
+  links:
+    - label: DOI 10.1017/S1355771826101459
+      url: https://doi.org/10.1017/S1355771826101459
+- year: 2019
+  title: "Multimodality and Audiovisual Perception: A Case Study involving Spatial Audio, Wave Field Synthesis and Dance Choreography"
+  venue: Proceedings of the AES International Conference on Immersive and Interactive Audio, York
+  links:
+    - label: AES e-Library
+      url: https://www.aes.org/e-lib/browse.cfm?elib=20440
+    - label: UEL Repository
+      url: https://repository.uel.ac.uk/item/8x613
+- year: 2017
+  title: "Sonic Choreosophia: a cross-disciplinary investigation on sound and movement practices"
+  venue: PhD thesis, Goldsmiths, University of London
+  links:
+    - label: Open access (Goldsmiths Research Online)
+      url: https://doi.org/10.25602/gold.00020112
+- year: 2013
+  title: Creativity and reproducibility in loudspeakers sound diffusion performances
+  venue: Conference paper, SAE 2013
+  links: []
+- year: 2012
+  title: Sonic Choreography for Surround Sound Environments
+  venue: CMMR 2012, Queen Mary University of London
+  links:
+    - label: PDF
+      url: http://cmmr2012.eecs.qmul.ac.uk/sites/cmmr2012.eecs.qmul.ac.uk/files/pdf/papers/cmmr2012_submission_51.pdf

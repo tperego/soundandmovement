@@ -1,0 +1,103 @@
+# Admin panel configuration for Pages CMS (https://app.pagescms.org)
+media:
+  input: img/uploads
+  output: /img/uploads
+  extensions: [jpg, jpeg, png, webp, gif, svg, pdf]
+
+content:
+  - name: posts
+    label: Research log
+    type: collection
+    path: _posts
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [title, date, tags]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: subtitle
+        label: Subtitle (optional)
+        type: string
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: published
+        label: Published (switch off to keep as a hidden draft)
+        type: boolean
+        default: true
+      - name: authors
+        label: Authors (leave empty for just you; add co-authors here)
+        type: string
+        list: true
+      - name: tags
+        label: Tags (e.g. Song of the Bees, spatial audio, ambisonics)
+        type: string
+        list: true
+      - name: summary
+        label: In short (1-2 plain-language sentences for general readers)
+        type: text
+      - name: abstract
+        label: Abstract (optional, academic; shown in a fold-out box)
+        type: text
+      - name: keywords
+        label: Keywords (optional)
+        type: string
+        list: true
+      - name: cover
+        label: Cover image
+        type: image
+      - name: cover_alt
+        label: Cover image description (for screen readers)
+        type: string
+      - name: cover_caption
+        label: Cover image caption / credit
+        type: string
+      - name: body
+        label: Post
+        type: rich-text
+        options:
+          format: markdown
+      - name: references
+        label: References (one per entry, e.g. Burgun, K. (2015) Game Design Theory. CRC Press.)
+        type: text
+        list: true
+
+  - name: publications
+    label: Publications
+    type: file
+    path: _data/publications.yml
+    format: yaml
+    list: true
+    fields:
+      - name: year
+        label: Year
+        type: number
+      - name: title
+        label: Title
+        type: string
+      - name: venue
+        label: Journal / conference / publisher
+        type: string
+      - name: new
+        label: Show "New" badge
+        type: boolean
+      - name: links
+        label: Links
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Link text
+            type: string
+          - name: url
+            label: URL
+            type: string
